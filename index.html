@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cozy Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #e8f4e5 url('images.jpg') repeat;
+      color: #444;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #446b4f;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .item {
+      margin-bottom: 1.5rem;
+    }
+    .item h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .item p {
+      margin: 0.2rem 0 0.5rem 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: #d7f5c6;
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      font-weight: 600;
+      color: #385932;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Cozy Resume</h1>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>XX University</h3>
+        <p>M.S.某转码项目 (GPA: 3.95/4.00), Aug 2022 – Dec 2024 (expected)</p>
+        <p>This program allowed me to deepen my knowledge of full-stack development, algorithms, and scalable systems. I gained practical experience building distributed applications and mastering operating systems through rigorous coursework.</p>
+      </div>
+      <div class="item">
+        <h3>XX College</h3>
+        <p>B.A. Mathematics and Psychology (GPA: 3.8/4.00), Aug 2019 – May 2022</p>
+        <p>Studied a combination of abstract mathematical concepts and human behavior, developing strong analytical and research skills. This double major fostered a unique perspective on problem-solving and user-centered development.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="item">
+        <h3>某个很小startup – Software Engineer Intern (Backend), San Diego, CA</h3>
+        <p>May 2022 – Present</p>
+        <p>Joined a dynamic team where I built scalable backend solutions to support diverse user types including students, teachers, and visitors. Designed and implemented Django middleware for role-based access control, significantly improving security and maintainability. Developed RESTful APIs with Python and Django ORM, and optimized MySQL database performance on Azure cloud. Introduced password salting techniques to enhance authentication security.</p>
+      </div>
+      <div class="item">
+        <h3>某个很小startup – Software Engineer Intern (Fullstack), New York, NY</h3>
+        <p>Jan 2023 – April 2023</p>
+        <p>Worked on a personal fitness platform, redesigning MySQL schemas to reduce disk I/O and improve query efficiency. Enhanced frontend performance by minifying JavaScript and CSS. Built custom parsers in Node.js for JSON data, reducing data load time by 10%. Created machine learning models using Python and SQL to predict trending videos based on user behavior and updated UI dynamically via React and MongoDB. Collaborated closely with the design team to ensure a seamless user experience.</p>
+      </div>
+      <div class="item">
+        <h3>某College数据可视化实验室 – Undergraduate Research Assistant, New York, NY</h3>
+        <p>Jan 2022 – May 2022</p>
+        <p>Participated in a research team building an interactive data visualization tool. Designed UI components and a responsive navigation bar using Figma and React. Implemented Redux slice reducers and React Axios to fetch real-time data, providing a dynamic and engaging user experience.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="item">
+        <h3>TopNews Platform</h3>
+        <p>Developed a large-scale, high-availability news platform using Java Spring Boot and Spring Cloud. Integrated microservice architecture to support login, article search, and chatbot features. Used Redis for distributed locking and caching, enhancing the site's ability to handle over 40,000 QPS. Implemented Kafka streaming for real-time trending analysis and FreeMarker + Nginx for static page deployment. CI/CD pipeline powered by Jenkins and Docker ensured smooth delivery and testing.</p>
+      </div>
+      <div class="item">
+        <h3>Social Network Web App</h3>
+        <p>Built a full-stack MERN application supporting user posts, chat, real-time notifications, and admin tools. Integrated JWT authentication to reduce security vulnerabilities by 20%. Built a real-time chatroom with WebSocket and created a custom search engine using Apache Solr. Visualized connections with D3.js and established an AWS-based CI/CD pipeline for rapid deployment and testing.</p>
+      </div>
+      <div class="item">
+        <h3>Lyft Rentals Virtual Experience</h3>
+        <p>Participated in a virtual internship where I implemented clean architecture principles using Python. Focused on enhancing system reliability through test-driven development and comprehensive unit tests. Refactored and debugged traffic flow components, improving code maintainability by 20%.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C++</div>
+        <div class="skill">SQL</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Django</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">Redis</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Azure</div>
+        <div class="skill">Git</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Kafka</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Apache Solr</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
