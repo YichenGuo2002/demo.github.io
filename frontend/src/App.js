@@ -12,7 +12,6 @@ function App() {
     const fetchData = async () => {
       try {
         const result = await api();
-        console.log(result)
         setData(result);
       } catch (err) {
         console.error("API call failed:", err);
@@ -33,7 +32,9 @@ function App() {
           <h2>🔌 API Response:</h2>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           {data ? (
-            <pre>{JSON.stringify(data, null, 2)}</pre>
+            <ul>{data.map(item => (
+              <li>{item}</li>
+            ))}</ul>
           ) : (
             <p>Loading...</p>
           )}

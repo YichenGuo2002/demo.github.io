@@ -1,6 +1,7 @@
 # app.py
 from flask import Flask, jsonify
 from flask_cors import CORS
+from scraper2 import getMainTitle
 
 app = Flask(__name__)
 CORS(app)
@@ -13,6 +14,11 @@ def get_data():
         'items': ['apple', 'banana', 'cherry'],
         'status':'success'
     }
+    return jsonify(sample_data)
+
+@app.route('/news', methods=['GET'])
+def get_data_2():
+    sample_data = getMainTitle()
     return jsonify(sample_data)
 
 if __name__ == '__main__':
