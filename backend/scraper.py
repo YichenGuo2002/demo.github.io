@@ -12,15 +12,17 @@ if response.status_code == 200:
     soup = BeautifulSoup(response.text, "html.parser")
     # Pirnt HTML print(soup)
 
-    # Print all i tag print(soup.find_all('i'))
+    # Print all i tag print('🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪', soup.find_all('i'))
 
     # Print first i print(soup.find('i'))
 
     # Or you can do print(soup.find_all('i')[0])
 
-    # To print text print(soup.find_all('i')[0].text)
+    # To print text 
 
     # Finding motto by classname print(soup.find_all('div', class_ = 'ib-settlement-nickname nickname'))
+    #class_
+    #id
 
     # We need the second one print(soup.find_all('div', class_ = 'ib-settlement-nickname nickname')[1].text)
 
@@ -36,7 +38,8 @@ if response.status_code == 200:
             print(link)
     '''
 
+
     # Anything else to print?
-    
+    print(soup.find_all("a", attrs={'title':'River Liffey'})[0])
 else:
     print(f"Failed to retrieve page. Status code: {response.status_code}")

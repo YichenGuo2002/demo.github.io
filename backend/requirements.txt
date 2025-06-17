@@ -1,2 +1,10 @@
 flask
 flask-CORS
+pyodbc
+fastapi
+uvicorn[standard]
+pydantic
+azure-identity
+bs4
+selenium
+webdriver_manager
